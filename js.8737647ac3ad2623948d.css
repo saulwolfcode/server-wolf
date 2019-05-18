@@ -527,7 +527,7 @@ img {
 
 .Contact {
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 75%;
   min-height: calc(100vh - var(--header-height));
   display: flex;
   justify-content: center;
@@ -709,6 +709,54 @@ img {
   color: #00aeff;
 }
 
+body {
+  background-color: #f9f9f9;
+}
+
+.list-menu-item a {
+  list-style: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .absolute h2 {
+    font-family: "Roboto",sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    color: #f11414;
+    z-index: -1;
+    font-family: 'roboto',sans-serif;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.31);
+  }
+
+  .date {
+    font-family: "Roboto",sans-serif;
+    margin-top: 224px;
+    font-size: 4rem;
+    font-weight: 200;
+    color: #00aeff;
+  }
+
+  .temp {
+    font-family: "Roboto",sans-serif;
+    margin-top: -108px;
+    font-size: 17rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: -0.07em;
+    color: #00c7ff;
+    opacity: .5;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.31);
+  }
+
+  .background {
+    background-size: cover;
+    background-position: center;
+    opacity: .4;
+  }
+}
+
 .Form * {
   margin-bottom: .5rem;
 }
@@ -719,10 +767,15 @@ img {
   padding: .5rem;
   width: 100%;
   display: block;
-  border: thin solid var(--alternate-color);
-  border-radius: .25rem;
+  border: 0;
+  border-bottom: thin solid var(--alternate-color);
   font-size: 1rem;
   font-family: var(--main-font);
+  transition: all .3s ease-out;
+  background-color: transparent;
+  font-size: 1rem;
+  font-family: var(--main-font);
+  outline: none;
   transition: all .3s ease-out;
 }
 
@@ -4311,4 +4364,4 @@ img {
 
 
 
-/*# sourceMappingURL=js.51884acd51bace6a614a.css.map*/
+/*# sourceMappingURL=js.8737647ac3ad2623948d.css.map*/
